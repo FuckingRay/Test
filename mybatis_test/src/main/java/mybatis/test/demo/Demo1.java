@@ -18,6 +18,8 @@ public class Demo1 {
 			sqlSession = sqlSessionFactory.openSession();
 			User user = sqlSession.selectOne("UserMapper.queryUserById", 2l);
 			System.out.println(user);
+			System.out.println("11111");
+			System.out.println("2222");
 		} finally {
 			// 关闭连接
 			if (sqlSession != null) {
